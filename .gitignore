@@ -1,0 +1,10 @@
+# Publish only custom_addons to GitHub (Smart-Trading)
+/*
+!/custom_addons/
+!/custom_addons/**
+!/.gitignore
+
+__pycache__/
+*.py[cod]
+*.egg-info
+.DS_Store
