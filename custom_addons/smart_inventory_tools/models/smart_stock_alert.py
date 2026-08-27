@@ -6,7 +6,12 @@ class SmartStockAlert(models.Model):
     _description = "Smart Stock Alert"
     _order = "detected_at desc, id desc"
 
-    name = fields.Char(string="Reference", required=True, copy=False, default="New")
+    name = fields.Char(
+        string="Reference",
+        required=True, 
+        copy=False, 
+        default="New"
+        )
     product_id = fields.Many2one(
         "product.product",
         string="Product",
